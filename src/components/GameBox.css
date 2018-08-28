@@ -1,0 +1,10 @@
+.game-box {
+  margin-top: 50px;
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  /* border: 3px white solid; */
+  border-radius: 3px;
+  background-color: #7266C2;
+
+}

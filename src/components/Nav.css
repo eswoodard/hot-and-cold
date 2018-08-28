@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #1F253D;;
+  color: white;
+  border: none;
+  margin: 20px;
+  font-size: 20px;
+}
