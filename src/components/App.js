@@ -33,13 +33,24 @@ class App extends React.Component {
 
   addGuess(number) {
     this.setState({guess: number, guessHistory: this.state.guessHistory.concat([number])});
-    if (number === this.state.number) {
-      this.setState({header: "You guessed the right number!"});
+    let diff = Math.abs(number - this.state.number);
+    console.log(diff);
+
+    if (diff >= 20) {
+      this.setState({header: "You are cold!"});
     }
-    else if (number >= this.state.number-10 && number <= this.state.number+10) {
+    else if (diff >= 11 && diff <= 19) {
+      this.setState({header: "You are getting warm!"});
+    }
+    else if (diff > 1 && diff <= 10) {
       this.setState({header: "You are hot!"});
     }
-    else {this.setState({header: "You are cold!"})}
+    else if (diff === 1) {
+      this.setState({header: "You are blazing hot!"});
+    }
+    else if (diff === 0) {
+      this.setState({header: "You guessed the number!"});
+    }
   }
 
   render() {

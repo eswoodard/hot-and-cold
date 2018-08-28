@@ -1,7 +1,6 @@
 import React from 'react';
 import './GameInput.css';
 
-
 class GameInput extends React.Component {
 
   onSubmit(event) {
@@ -9,10 +8,7 @@ class GameInput extends React.Component {
     const number = parseFloat(this.numberInput.value.trim());
     this.props.onSubmit(number);
     event.currentTarget.reset();
-
   }
-
-
 
   render() {
     return (

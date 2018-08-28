@@ -8,11 +8,6 @@ import PlayerFeedback from './PlayerFeedback';
 
 function GameBox(props) {
 
-//  function newGuess(number) {
-//     props.addGuess(number);
-//   }
-
-
     return (
       <div className="game-box">
         <PlayerFeedback header={props.header}/>

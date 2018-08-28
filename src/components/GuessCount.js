@@ -3,15 +3,15 @@ import './GuessCount.css';
 
 
 
-class GuessCount extends React.Component {
-  render() {
+function GuessCount(props) {
+
     return (
       <div className="guess-count">
-        <p>Guess #<span>{this.props.number}</span>!</p>
+        <p>Guess #<span>{props.number}</span>!</p>
       </div>
 
     );
-  }
+
 }
 
 export default GuessCount;
